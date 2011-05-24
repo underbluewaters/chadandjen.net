@@ -1,0 +1,23 @@
+{
+  "author": "Chad Burt <chad@underbluewaters.net>",
+  "name": "chadandjen.net",
+  "description": "Our wedding site.",
+  "version": "0.0.0",
+  "homepage": "http://chadandjen.net",
+  "main": "./app.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/underbluewaters/chadandjen.net.git"
+  },
+  "engines": {
+    "node": "0.4.x"
+  },
+  "dependencies": {
+    "coffee-script": "1.1.1",
+    "express": "2.3.6",
+    "hamljs": "",
+    "less": ""
+  },
+  "devDependencies": {},
+  "private": true
+}

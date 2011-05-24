@@ -1,0 +1,9 @@
+Features of chadandjen.com
+  microformats to find us, contact info, etc
+  slideshow of engagement photos
+  directions/map
+  registry
+  places to stay
+  personalized welcome message via /#/email@example.com
+  rsvp
+  ical/google cal  

@@ -1,0 +1,24 @@
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+.rotate (@angle: 35) {
+  @ang: ~`"@{angle}" + "deg"`;
+  -webkit-transform : rotate(@ang);
+  -moz-transform    : rotate(@ang);
+  -o-transform      : rotate(@ang);
+  -ms-transform     : rotate(@ang);
+  transform         : rotate(@ang);
+}
+
+.transition (   @range: all, 
+                @time: 0.2s, 
+                @ease: ease-in-out) 
+{
+  -webkit-transition: @range @time @ease;
+  -moz-transition:    @range @time @ease;
+  -o-transition:      @range @time @ease;
+  transition:         @range @time @ease;
+}
