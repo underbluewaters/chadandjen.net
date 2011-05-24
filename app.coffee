@@ -9,7 +9,7 @@ app = express.createServer()
 static = 'http://share.underbluewaters.net/chadandjen.net/'
 
 # dev
-static = ''
+# static = ''
 
 # Setup HAML template handling
 app.configure ->

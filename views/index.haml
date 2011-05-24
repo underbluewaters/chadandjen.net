@@ -12,11 +12,11 @@
     %link{rel: "stylesheet", type: "text/css", href: static + "static/colorbox/colorbox.css"}
   %body
     #cloth
-      %img{src: static + 'static/jelly.jpg'}.jelly
-      %img{src: static + 'static/brittle.png'}.brittle
-      %img{src: static + 'static/backgrounds/envelope_top.png'}.envelope_top
+      %img{src: static + 'static/jelly.jpg', width: 885, height: 1224}.jelly
+      %img{src: static + 'static/brittle.png', width: 357, height: 409}.brittle
+      %img{src: static + 'static/backgrounds/envelope_top.png', width: 800, height: 75}.envelope_top
       #envelope
-        %img{src: static + 'static/stamp.jpg'}.stamp
+        %img{src: static + 'static/stamp.jpg', width: 350, height: 300}.stamp
         .portrait
           %img{src: static + 'static/photos/portrait.jpg', width: 640, height: 511}
           %p.photo_text engagement photos
@@ -26,10 +26,10 @@
             %li
               %a{href: photo, rel: 'gallery'}.photo_link
       #paper
-        %img{src: static + 'static/backgrounds/paper-top.png'}.paper_top
+        %img{src: static + 'static/backgrounds/paper-top.png', width: 779, height: 36}.paper_top
         %h2 Please join us!
         .jen_aus
-          %img{src: static + 'static/jen.jpg', alt: 'Photo of Jen in Australia where we met'}
+          %img{src: static + 'static/jen.jpg', alt: 'Photo of Jen in Australia where we met', width: 180, height: 135}
           %p.aus_text I took this photo of Jen back when we met in Australia
         %p
           After six happy years together we're getting married on October 1st
@@ -55,8 +55,8 @@
           It's also a good place to share fun stuff from the wedding like 
           photos and videos from our photographer and home-made photo booth.
           %hr
-          %img{src: static + 'static/boxfish.png'}.boxfish
-          %img{src: static + 'static/tz_boxfish.png'}.tz_boxfish
+          %img{src: static + 'static/boxfish.png', width: 250, height: 90}.boxfish
+          %img{src: static + 'static/tz_boxfish.png', width: 169, height: 100}.tz_boxfish
           %br.clear
           %br.clear
         #details
@@ -70,7 +70,7 @@
                 %a{href: 'http://www.google.com/calendar/event?action=TEMPLATE&text=Jen%20%26%20Chads%20Wedding&dates=20111001T233000Z/20111002T053000Z&details=&location=Santa%20Barbara%20Museum%20of%20Natural%20History&trp=true&sprop=http%3A%2F%2Fchadandjen.net&sprop=name:chadandjen.net', target: '_blank'} add to google calendar
             %p.desc Ceremony, cocktail hour, and dinner reception will all be at the museum
             %a{href: "http://sbnature.org", target: '_blank'}.museum
-              %img{src: static + 'static/museum.png'}
+              %img{src: static + 'static/museum.png', width: 300, height: 83}
             %ul.links
               %li
                 %a{target: '_blank', href: 'http://sbnature.org'} website
