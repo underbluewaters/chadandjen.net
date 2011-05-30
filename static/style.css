@@ -323,3 +323,7 @@ p.desc {
 #details p {
   text-align: center;
 }
+#details h4 {
+  text-align: center;
+  padding-top: 25px;
+}
