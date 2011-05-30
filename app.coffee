@@ -9,13 +9,19 @@ app = express.createServer()
 static = 'http://share.underbluewaters.net/chadandjen.net/'
 
 # dev
-static = './'
+# static = './'
 
 # Setup HAML template handling
 app.configure ->
   app.use('/static', express.static(__dirname + '/static'))
   app.set 'view engine', 'haml'
   app.register '.haml', require('hamljs')
+
+# Favicon
+app.get '/favicon.ico', (req, res) ->
+  fs.readFile __dirname + '/static/favicon.ico', (err, content) ->
+    res.writeHead 200, {'Content-Type': 'image/x-icon'}
+    res.end content
 
 # Main page
 app.get '/:email?', (req, res) ->
