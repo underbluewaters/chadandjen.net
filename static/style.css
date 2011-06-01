@@ -327,3 +327,6 @@ p.desc {
   text-align: center;
   padding-top: 25px;
 }
+#details ul ul li {
+  text-align: center;
+}
