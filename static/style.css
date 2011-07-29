@@ -1,3 +1,14 @@
+/*---------------------------------------------------
+		LESS Elements 0.5
+	---------------------------------------------------
+		A set of useful LESS mixins by Dmitry Fadeyev
+		Special thanks for mixin suggestions to:
+			Kris Van Herzeele,
+			Benoit Adam,
+			Portenart Emile-Victor
+			
+		More info at: http://lesselements.com
+-----------------------------------------------------*/
 html, body {
   margin: 0px;
   padding: 0px;
@@ -114,18 +125,30 @@ div.portrait {
   -o-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
+  -webkit-transition: all -webkit-transform 0.1s;
+  -moz-transition: all -webkit-transform 0.1s;
+  transition: all -webkit-transform 0.1s;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   -moz-transition: -webkit-transform 0.1s ease-in-out;
   -o-transition: -webkit-transform 0.1s ease-in-out;
   transition: -webkit-transform 0.1s ease-in-out;
+  -webkit-transition: all -moz-transform 0.1s;
+  -moz-transition: all -moz-transform 0.1s;
+  transition: all -moz-transform 0.1s;
   -webkit-transition: -moz-transform 0.1s ease-in-out;
   -moz-transition: -moz-transform 0.1s ease-in-out;
   -o-transition: -moz-transform 0.1s ease-in-out;
   transition: -moz-transform 0.1s ease-in-out;
+  -webkit-transition: all -o-transform 0.1s;
+  -moz-transition: all -o-transform 0.1s;
+  transition: all -o-transform 0.1s;
   -webkit-transition: -o-transform 0.1s ease-in-out;
   -moz-transition: -o-transform 0.1s ease-in-out;
   -o-transition: -o-transform 0.1s ease-in-out;
   transition: -o-transform 0.1s ease-in-out;
+  -webkit-transition: all -ms-transform 0.1s;
+  -moz-transition: all -ms-transform 0.1s;
+  transition: all -ms-transform 0.1s;
   -webkit-transition: -ms-transform 0.1s ease-in-out;
   -moz-transition: -ms-transform 0.1s ease-in-out;
   -o-transition: -ms-transform 0.1s ease-in-out;
@@ -135,13 +158,10 @@ div.portrait img {
   width: 320px;
   height: 260px;
 }
-div.portrait:hover {
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  -o-transform: rotate(1deg);
-  -ms-transform: rotate(1deg);
-  transform: rotate(1deg);
+/*div.portrait:hover {
+  .rotate(1);
 }
+*/
 div.portrait {
   text-align: center;
 }
@@ -332,4 +352,21 @@ p.desc {
   font-style: italic;
   padding-bottom: 5px;
   color: #2F4468;
+}
+#details ul.links.museum {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+#details ul.links.museum li a {
+  font-size: 16px;
+  background-color: #B06E68;
+  color: white;
+  padding: 5px 8px;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#details ul.links.museum li a:hover {
+  text-decoration: underline;
 }

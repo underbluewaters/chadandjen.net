@@ -1,3 +1,4 @@
+@import "elements";
 @import "mixins";
 
 html, body {
@@ -126,10 +127,10 @@ div.portrait img {
   height: 260px;
 }
 
-div.portrait:hover {
+/*div.portrait:hover {
   .rotate(1);
 }
-
+*/
 div.portrait {
   text-align: center;
 }
@@ -341,4 +342,22 @@ p.desc {
   font-style: italic;
   padding-bottom:5px;
   color:#2F4468;
+}
+
+#details ul.links.museum {
+  margin-top:5px;
+  margin-bottom:30px;
+}
+
+#details ul.links.museum li a {
+  font-size:16px;
+  background-color:#B06E68;
+  color:white;
+  padding:5px 8px;
+  text-decoration:none;
+  .rounded(5px);
+}
+
+#details ul.links.museum li a:hover {
+  text-decoration:underline;
 }
