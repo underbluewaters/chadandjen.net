@@ -370,3 +370,17 @@ p.desc {
 #details ul.links.museum li a:hover {
   text-decoration: underline;
 }
+
+
+#photos a, #photos a:hover, #photos a:active, #photos a:visited {
+  color:white !important;
+  text-decoration:none;
+}
+
+#photos {
+  position:absolute;
+  top:320px;
+  left:340px;
+  z-index:100;
+/*  width:auto;*/
+}

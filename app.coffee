@@ -6,16 +6,23 @@ fs = require 'fs'
 app = express.createServer()
 
 # production
-static = 'http://share.underbluewaters.net/chadandjen.net/'
+# static = 'http://share.underbluewaters.net/chadandjen.net/'
 
 # dev
-# static = './'
+static = './'
 
 # Setup HAML template handling
 app.configure ->
+  app.use express.static("#{__dirname}/transfer/public")
   app.use('/static', express.static(__dirname + '/static'))
   app.set 'view engine', 'haml'
+  app.set 'view options', layout: false
   app.register '.haml', require('hamljs')
+
+try
+  require("#{__dirname}/transfer/photo_viewer").register app
+catch error
+  console.log 'could not register photo viewer'
 
 # Favicon
 app.get '/favicon.ico', (req, res) ->
@@ -29,4 +36,4 @@ app.get '/:email?', (req, res) ->
     photos = (static + 'static/photos/' + file for file in files when file != 'portrait.jpg')
     res.render 'index', layout: false, photos: photos, static: static
 
-app.listen 3000, '127.0.0.1'
+app.listen 3001, '127.0.0.1'
