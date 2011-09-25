@@ -36,4 +36,4 @@ app.get '/:email?', (req, res) ->
     photos = (static + 'static/photos/' + file for file in files when file != 'portrait.jpg')
     res.render 'index', layout: false, photos: photos, static: static
 
-app.listen 3001, '127.0.0.1'
+app.listen 3000, '127.0.0.1'
